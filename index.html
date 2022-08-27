@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,72 +13,166 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+
+  <body class="container mt-3 ">
+    <header class="p-3 text-bg-secondary rounded">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><h2>Consulta endereço</h2></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" id="pesquisa-cep">
+            <input
+              type="search"
+              class="form-control form-control-dark text"
+              placeholder="Digite o CEP"
+              aria-label="Buscar"
+              id="cep"
+            />
+            <button class="btn btn-warning ms-2" type="submit">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light mt-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Encontrar Endereço</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Digite o CEP"
-                aria-label="Buscar"
-              />
-              <button class="btn btn-secondary" type="submit">
-                <span class="fas fa-search"></span>
-              </button>
-            </form>
-          </div>
+          <form class="d-flex" id="pesquisa-cep">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Digite o CEP"
+              aria-label="Buscar"
+              id="cep"
+            />
+            <button class="btn btn-secondary" type="submit">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
         </div>
       </nav>
     </header>
+    -->
 
-    <main class="container d-flex justify-content-center align-items-center">
-      <!--Inicio do formulario-->
+    <main class="d-flex align-items-center">
+      <div class="container">
+        <table class="table table-bordered mt-5" id="table-enderecos">
+          <thead class="table-secondary">
+            <tr>
+              <th scope="col">CEP</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Bairro</th>
+              <th scope="col">Cidade/Estado</th>
+            </tr>
+          </thead>
+          <tbody id="enderecos-tbody"></tbody>
+        </table>
+        <div class="nav d-flex justify-content-end mt-2">
+          <button class="btn btn-secondary" id="btn-limpar">
+            Limpar consulta
+          </button>
+        </div>
+
+        <h4 id="start-wrapper" class="text-center text-muted mt-5">
+          Pesquise o CEP desejado
+        </h4>
+      </div>
+    </main>
+    
+    <!--
+    <main
+      class="container d-flex justify-content-center align-items-center text-center"
+    >
+  
+      <table id="lista" width="100%">
+        <thead>
+          <tr>
+            <th id="cep">CEP</th>
+            <th id="logradouro">Rua</th>
+            <th id="bairro">Bairro</th>
+            <th id="localidade">Cidade</th>
+            <th id="uf">Estado</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
       <form>
         <div class="form-group">
           <label for="cep">CEP</label>
-          <input type="text" class="form-control" id="cep" />
-          <small>00000-000</small>
+          <input type="text" class="form-control"  />
         </div>
         <div class="form-group">
           <label for="logradouro">Rua</label>
-          <input type="text" class="form-control" id="logradouro" />
-          <small>Rua</small>
+          <input type="text" class="form-control"  />
         </div>
         <div class="form-group">
           <label for="bairro">Bairro</label>
-          <input type="text" class="form-control" id="bairro" />
-          <small>Bairro</small>
+          <input type="text" class="form-control"  />
         </div>
         <div class="form-group">
           <label for="localidade">Cidade</label>
-          <input type="text" class="form-control" id="localidade" />
-          <small>Cidade</small>
+          <input type="text" class="form-control"  />
         </div>
         <div class="form-group">
           <label for="uf">UF</label>
-          <input type="text" class="form-control" id="uf" />
-          <small>Estado</small>
+          <input type="text" class="form-control"  />
         </div>
       </form>
     </main>
+    -->
 
+    <!-- 
+    <main>
+      <div class="container">
+        <div class="nav justify-content-end my-3">
+          <button class="btn btn-danger shadow" id="btn-limpart">
+            <span class="fas fa-trash"></span>
+          </button>
+        </div>
+
+        <table
+          class="shadow table table-striped table-bordered"
+          id="table-enderecos"
+        >
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">CEP</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Bairro</th>
+              <th scope="col">Cidade/Estado</th>
+            </tr>
+          </thead>
+          <tbody id="enderecos-tbody"></tbody>
+        </table>
+
+        <p id="start-wrapper" class="text-center text-muted">
+          Você ainda nao buscou nenhum endereço, utilize o campo CEP para
+          iniciar a busca.
+        </p>
+      </div>
+    </main>
+
+    -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script

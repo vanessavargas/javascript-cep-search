@@ -10,7 +10,7 @@ O deploy foi realizado no Netlify, e pode ser visualizado neste [link](https://p
 
 ## Sobre
 
-Consumo da API Via CEP com Javascript, utilizando fetch. O desafio foi proposto durante o curso de aceleração Dev For Tech - Desenvolvimento Front End ReactJS, da Gama Academy e ACATE. 
+Consumo da API Via CEP com Javascript, utilizando o método fetch. O desafio foi proposto durante o curso de aceleração Dev For Tech - Desenvolvimento Front End ReactJS, da Gama Academy e ACATE. 
 
 A proposta de layout é simples, onde há um input para inserção do CEP. Quando existente, é apresentado os dados relacionados em uma lista abaixo, caso o CEP esteja incorreto, uma mensagem é visualizada pelo usuário.
 

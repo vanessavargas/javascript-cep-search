@@ -1,11 +1,24 @@
-# desafio-busca-cep
-Consumo da API Via CEP utilizando fetch, desafio realizado durante o curso de aceleração Dev For Tech, da Gama Academy e ACATE, de Desenvolvimento Front End ReactJS
+# Projeto Busca CEP
 
-### Link da aplicação
-https://pesquisar-cep.netlify.app/
+<div align="center">
 
-### Tecnologias utilizadas:
+![Mockup-projeto](https://github.com/vanessavargas/desafio-busca-cep/blob/master/img/layout.png)
+
+</div>
+
+O deploy foi realizado no Netlify, e pode ser visualizado neste [link](https://pesquisar-cep.netlify.app/).
+
+## Sobre
+
+Consumo da API Via CEP com Javascript, utilizando fetch. O desafio foi proposto durante o curso de aceleração Dev For Tech - Desenvolvimento Front End ReactJS, da Gama Academy e ACATE. 
+
+A proposta de layout é simples, onde há um input para inserção do CEP. Quando existente, é apresentado os dados relacionados em uma lista abaixo, caso o CEP esteja incorreto, uma mensagem é visualizada pelo usuário.
+
+## Tecnologias utilizadas
+
 - HTML
 - CSS
+- Boostrap
 - JS 
 
+#### ✨ Desenvolvido por Vanessa Vargas ✨

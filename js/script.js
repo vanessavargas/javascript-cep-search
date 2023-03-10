@@ -83,7 +83,7 @@ async function get(cep) {
   const res = await fetch(apiCep.replace("value", normalizeString(cep)));
   const body = await res.json();
 
-  body.hasOwnProperty("erro") ? swal("Endereço não existe") : render(body);
+  body.hasOwnProperty("erro") ? swal("CEP digitado inexistente") : render(body);
 }
 
 //LISTENERS

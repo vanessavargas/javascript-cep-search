@@ -12,12 +12,6 @@ O deploy foi realizado no Netlify, e pode ser visualizado neste [link](https://p
 
 Consumo da API Via CEP com Javascript, utilizando o método fetch. O desafio foi proposto durante o curso de aceleração Dev For Tech - Desenvolvimento Front End ReactJS, da Gama Academy e ACATE. 
 
-## Telas desenvolvidas
-
-![Layout](https://github.com/vanessavargas/desafio-busca-cep/blob/master/img/layout1.png)
-
-![Layout](https://github.com/vanessavargas/desafio-busca-cep/blob/master/img/layout2.png)
-
 A proposta de layout é simples, com um input para inserção do CEP. Quando existente, é apresentado os dados relacionados em uma lista abaixo, caso o CEP esteja incorreto, uma mensagem é visualizada pelo usuário.
 
 ## Tecnologias utilizadas

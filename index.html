@@ -21,71 +21,78 @@
     />
   </head>
 
-  <body class="container mt-3 ">
-    <header class="p-3 text-bg-secondary rounded">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li><h2>Consulta endereço</h2></li>
-          </ul>
+  <body class="bg-dark-subtle">
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" id="pesquisa-cep">
-            <input
-              type="search"
-              class="form-control form-control-dark text"
-              placeholder="Digite o CEP"
-              aria-label="Buscar"
-              id="cep"
-            />
-            <button class="btn btn-warning ms-2" type="submit">
-              <span class="fas fa-search"></span>
-            </button>
-          </form>
+    <nav class="navbar">
+      <a class="navbar-brand fs-1 m-4"><em>Busca CEP</em></a>
+    </nav>
+    <div class="container mt-3 ">
+      <header class="p-3 text-bg-secondary rounded">
+
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li><h4>Consulta endereço</h4></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" id="pesquisa-cep">
+              <input
+                type="search"
+                class="form-control form-control-dark text"
+                placeholder="Digite o CEP"
+                aria-label="Buscar"
+                id="cep"
+              />
+              <button class="btn btn-warning ms-2" type="submit">
+                <span class="fas fa-search"></span>
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-    </header>
-    
-    <main class="d-flex align-items-center">
-      <div class="container">
-        <table class="table table-bordered mt-5" id="table-enderecos">
-          <thead class="table-secondary">
-            <tr>
-              <th scope="col">CEP</th>
-              <th scope="col">Endereço</th>
-              <th scope="col">Bairro</th>
-              <th scope="col">Cidade/Estado</th>
-            </tr>
-          </thead>
-          <tbody id="enderecos-tbody"></tbody>
-        </table>
-        <div class="nav d-flex justify-content-end mt-2">
-          <button class="btn btn-secondary" id="btn-limpar">
-            Limpar consulta
-          </button>
-        </div>
+      </header>
+      
+      <main class="d-flex align-items-center">
+        <div class="container">
+          <table class="table table-bordered mt-5" id="table-enderecos">
+            <thead class="table-secondary">
+              <tr>
+                <th scope="col">CEP</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Cidade/Estado</th>
+              </tr>
+            </thead>
+            <tbody id="enderecos-tbody"></tbody>
+          </table>
+          <div class="nav d-flex justify-content-end mt-2">
+            <button class="btn btn-secondary" id="btn-limpar">
+              Limpar consulta
+            </button>
+          </div>
 
-        <h4 id="start-wrapper" class="text-center text-muted mt-5">
-          Pesquise o CEP desejado
-        </h4>
-      </div>
-    </main>
+          <h4 id="start-wrapper" class="text-center text-muted mt-5">
+            Pesquise o CEP desejado
+          </h4>
+        </div>
+      </main>
+      
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="./js/script.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://kit.fontawesome.com/f82486fc2e.js"
+        crossorigin="anonymous"
+      ></script>
+    </div>
     
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./js/script.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f82486fc2e.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

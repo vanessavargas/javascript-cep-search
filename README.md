@@ -16,8 +16,8 @@ A proposta de layout é simples, com um input para inserção do CEP. Quando exi
 
 ## Tecnologias utilizadas
 
+- Javascript
 - HTML
 - Boostrap
-- JS 
 
 #### ✨ Desenvolvido por Vanessa Vargas ✨

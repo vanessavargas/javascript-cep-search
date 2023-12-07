@@ -1,23 +1,23 @@
-# Projeto Busca CEP
+# CEP Search Project
 
 <div align="center">
 
-![Mockup-projeto](https://github.com/vanessavargas/desafio-busca-cep/blob/master/img/layout.png)
+![Mockup](https://github.com/vanessavargas/desafio-busca-cep/blob/master/img/layout.png)
 
 </div>
 
-O deploy foi realizado no Netlify, e pode ser visualizado neste [link](https://pesquisar-cep.netlify.app/).
+The deployment was done on Netlify and can be viewed at this [link](https://pesquisar-cep.netlify.app/).
 
-## Sobre
+## About
 
-Consumo da API Via CEP com Javascript, utilizando o método fetch. O desafio foi proposto durante o curso de aceleração Dev For Tech - Desenvolvimento Front End ReactJS, da Gama Academy e ACATE. 
+Consumption of the Via CEP API with JavaScript, using the fetch method. The challenge was proposed during the Dev For Tech - Front-End ReactJS acceleration course, by Gama Academy and ACATE.
 
-A proposta de layout é simples, com um input para inserção do CEP. Quando existente, é apresentado os dados relacionados em uma lista abaixo, caso o CEP esteja incorreto, uma mensagem é visualizada pelo usuário.
+The layout proposal is simple, with an input for entering the ZIP code. When valid, the related data is presented in a list below. If the ZIP code is incorrect, a message is displayed to the user.
 
-## Tecnologias utilizadas
+## Technologies Used
 
 - Javascript
 - HTML
 - Boostrap
 
-#### ✨ Desenvolvido por Vanessa Vargas ✨
+#### ✨ Developed by Vanessa Vargas ✨
